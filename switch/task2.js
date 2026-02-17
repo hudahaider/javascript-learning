@@ -1,4 +1,5 @@
-const prompt = require('prompt-sync')();
+import pr from "prompt-sync"
+const prompt = pr();
 
 console.log('"Exam Result Comment Generator"')
 

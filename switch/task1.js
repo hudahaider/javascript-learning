@@ -1,4 +1,5 @@
-const prompt = require('prompt-sync')();
+import pr from "prompt-sync"
+const prompt = pr();
 
 let enter = prompt("Enter role : ")
 switch(enter){
@@ -12,6 +13,6 @@ switch(enter){
         console.log("Read-only access granted")
     break;
     default:
-        console.log("Access denied: Unknown role")
+        console.log(`Access denied: Unknown role (${enter})`)
 }
 //npm init -y
